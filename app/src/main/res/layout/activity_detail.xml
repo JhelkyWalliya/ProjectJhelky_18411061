@@ -7,7 +7,7 @@
     tools:context=".DetailActivity">
 
     <ImageView
-        android:id="@+id/_imageDetail"
+        android:id="@+id/imageDetail"
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:layout_marginLeft="16dp"
@@ -22,7 +22,7 @@
         tools:srcCompat="@tools:sample/avatars" />
 
     <TextView
-        android:id="@+id/_imageTitle"
+        android:id="@+id/imageTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="44dp"
@@ -32,10 +32,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/_imageDetail" />
+        app:layout_constraintTop_toBottomOf="@+id/imageDetail" />
 
     <TextView
-        android:id="@+id/_imageDesc"
+        android:id="@+id/imageDesc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
@@ -45,5 +45,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.101"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/_imageTitle" />
+        app:layout_constraintTop_toBottomOf="@+id/imageTitle" />
 </androidx.constraintlayout.widget.ConstraintLayout>

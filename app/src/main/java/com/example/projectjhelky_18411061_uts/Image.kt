@@ -1,11 +1,12 @@
 package com.example.projectjhelky_18411061_uts
 
-import android.os.Parcelable
-import kotlinx.android.parcel.Parcelize
+import com.google.firebase.database.Exclude
 
-@Parcelize
 data class Image(
-    val imageSrc : Int,
-    val imageTitle : String,
-    val imageDesc : String
-): Parcelable
+    val imageSrc : String? = null,
+    val imageTitle : String? = null,
+    val imageDesc : String? = null,
+    @get:Exclude
+    @set:Exclude
+    var key:String? = null
+)

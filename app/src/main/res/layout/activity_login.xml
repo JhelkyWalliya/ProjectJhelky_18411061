@@ -12,6 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/top_background1" />
@@ -21,79 +22,103 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Welcome\nKebun Kopi"
-        app:layout_goneMarginStart="32dp"
-        android:textStyle="bold"
-        android:textSize="40dp"
         android:textColor="#199B33"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        android:textSize="40dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_goneMarginStart="32dp" />
 
     <EditText
-        android:id="@+id/textEmail"
+        android:id="@+id/edtEmail"
         android:layout_width="0dp"
         android:layout_height="50dp"
-        android:drawableStart="@drawable/email"
         android:layout_marginStart="32dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="32dp"
+        android:drawableStart="@drawable/email"
         android:drawablePadding="16dp"
-        android:textSize="18sp"
-        android:textColor="#199B33"
-        android:textColorHint="#199B33"
         android:ems="10"
         android:hint="Email"
         android:inputType="textPersonName"
+        android:textColor="#199B33"
+        android:textColorHint="#199B33"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <EditText
-        android:id="@+id/textPassword"
+        android:id="@+id/edtPassword"
         android:layout_width="0dp"
         android:layout_height="50dp"
-        android:ems="10"
-        android:drawableStart="@drawable/password"
-        android:inputType="textPassword"
         android:layout_marginStart="32dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="32dp"
+        android:drawableStart="@drawable/password"
         android:drawablePadding="16dp"
-        android:textSize="18sp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
         android:textColor="#199B33"
         android:textColorHint="#199B33"
-        android:hint="Password"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textEmail" />
+        app:layout_constraintTop_toBottomOf="@+id/edtEmail" />
 
     <Button
         android:id="@+id/btnLogin"
+        style="@android:style/Widget.Button"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        style="@android:style/Widget.Button"
-        android:background="@drawable/sosial_btn"
-        android:drawableEnd="@drawable/btn_arraw1"
         android:layout_marginStart="32dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="32dp"
+        android:background="@drawable/sosial_btn"
+        android:drawableEnd="@drawable/btn_arraw1"
         android:drawablePadding="16dp"
         android:text="Login"
         android:textColor="#199b53"
-        android:textStyle="bold"
         android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/edtPassword" />
 
     <TextView
         android:id="@+id/textRegister"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:text="Are You New User? Register"
         android:textColor="#199b53"
         android:textSize="16sp"
         android:textStyle="bold"
-        android:layout_marginTop="10dp"
         app:layout_constraintEnd_toEndOf="@+id/btnLogin"
         app:layout_constraintStart_toStartOf="@+id/btnLogin"
         app:layout_constraintTop_toBottomOf="@+id/btnLogin" />
+
+    <TextView
+        android:id="@+id/textForgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Forgot Password"
+        android:textColor="#199b53"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/btnLogin"
+        app:layout_constraintStart_toStartOf="@+id/btnLogin"
+        app:layout_constraintTop_toBottomOf="@+id/textRegister" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="left" />
 </androidx.constraintlayout.widget.ConstraintLayout>

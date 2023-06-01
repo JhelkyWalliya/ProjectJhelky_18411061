@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
@@ -6,14 +5,17 @@
         <entry key="..\:/Project/app/src/main/res/drawable/edittext_background.xml" value="0.2855" />
         <entry key="..\:/Project/app/src/main/res/drawable/sosial_btn.xml" value="0.2855" />
         <entry key="..\:/Project/app/src/main/res/layout/activity_detail.xml" value="0.28940217391304346" />
-        <entry key="..\:/Project/app/src/main/res/layout/activity_login.xml" value="0.22" />
+        <entry key="..\:/Project/app/src/main/res/layout/activity_forgot.xml" value="0.32222222222222224" />
+        <entry key="..\:/Project/app/src/main/res/layout/activity_login.xml" value="0.18" />
         <entry key="..\:/Project/app/src/main/res/layout/activity_main.xml" value="0.28940217391304346" />
-        <entry key="..\:/Project/app/src/main/res/layout/activity_register.xml" value="0.3625" />
+        <entry key="..\:/Project/app/src/main/res/layout/activity_register.xml" value="0.25" />
+        <entry key="..\:/Project/app/src/main/res/layout/forgot.xml" value="0.32222222222222224" />
         <entry key="..\:/Project/app/src/main/res/layout/item_image.xml" value="0.23324275362318841" />
+        <entry key="..\:/Project/app/src/main/res/menu/mymenu.xml" value="0.32222222222222224" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
