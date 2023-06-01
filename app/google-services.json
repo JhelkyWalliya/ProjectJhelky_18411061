@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "383825478671",
+    "project_id": "projectjhelky18411061",
+    "storage_bucket": "projectjhelky18411061.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:383825478671:android:c19068fa8071214e458f7a",
+        "android_client_info": {
+          "package_name": "com.example.projectjhelky_18411061_uts"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAREU9cCf_WL6cUvWAb1DGywnpkM3wdBuo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

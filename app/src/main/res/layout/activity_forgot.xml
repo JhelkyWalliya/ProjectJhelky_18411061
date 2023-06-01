@@ -5,22 +5,22 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#EEF9EE"
-    tools:context=".RegisterActivity">
+    tools:context=".LoginActivity">
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="match_parent"
-        android:layout_height="400dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/top_background2" />
+        app:srcCompat="@drawable/top_background1" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Create\nAccount"
+        android:text="Reset\nPassword"
         app:layout_goneMarginStart="32dp"
         android:textStyle="bold"
         android:textSize="40dp"
@@ -28,29 +28,10 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <EditText
-        android:id="@+id/edtPassword"
-        android:layout_width="0dp"
-        android:layout_height="50dp"
-        android:drawableStart="@drawable/email"
-        android:layout_marginStart="32dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginTop="5dp"
-        android:drawablePadding="16dp"
-        android:textSize="18sp"
-        android:textColor="#199B33"
-        android:textColorHint="#199B33"
-        android:ems="10"
-        android:hint="Password"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtEmail" />
-
-    <EditText
         android:id="@+id/edtEmail"
         android:layout_width="0dp"
         android:layout_height="50dp"
-        android:drawableStart="@drawable/name"
+        android:drawableStart="@drawable/email"
         android:layout_marginStart="32dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="32dp"
@@ -65,27 +46,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
-    <EditText
-        android:id="@+id/edtConfirmPassword"
-        android:layout_width="0dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginTop="5dp"
-        android:drawableStart="@drawable/password"
-        android:drawablePadding="16dp"
-        android:ems="10"
-        android:hint="ConfirmPassword"
-        android:inputType="textPassword"
-        android:textColor="#199B33"
-        android:textColorHint="#199B33"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtPassword" />
-
     <Button
-        android:id="@+id/btnRegister"
+        android:id="@+id/btnReset"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         style="@android:style/Widget.Button"
@@ -95,13 +57,12 @@
         android:layout_marginTop="20dp"
         android:layout_marginEnd="32dp"
         android:drawablePadding="16dp"
-        android:text="Register"
+        android:text="Forgot"
         android:textColor="#199b53"
         android:textStyle="bold"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtConfirmPassword" />
-
+        app:layout_constraintTop_toBottomOf="@+id/edtEmail" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
